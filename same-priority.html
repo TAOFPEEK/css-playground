@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class、pseudo class(伪类)、attribute(属性) </title>
+    <style>
+        input {
+            padding: 0 10px;
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        input.input-box {
+            background: #f66;
+        }
+
+        input:focus {
+            background-color: #66f;
+        }
+
+        input[type=text] {
+            background: #f90;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bruce flex-ct-x">
+        <!-- 类选择器、伪类选择器和属性选择器三者的优先级别相同，但最后出现的规则其优先级别最高 -->
+        <input class="input-box" type="text">
+    </div>
+</body>
+
+</html>
