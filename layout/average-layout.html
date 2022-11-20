@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Average Layout</title>
+    <style>
+        .one {
+            background-color: #f66;
+        }
+
+        .two {
+            background-color: #66f;
+        }
+
+        .three {
+            background-color: #f90;
+        }
+
+        .four {
+            background-color: #09f;
+        }
+
+        /* 方案一：float 浮动布局 */
+        /* .average-layout {
+            width: 400px;
+            height: 400px;
+        }
+
+        div {
+            float: left;
+            width: 25%;
+            height: 100%;
+        } */
+        /* 方案二：column 布局 */
+        /* .average-layout {
+            column-count: 4;
+            column-gap: 0;
+            width: 400px;
+            height: 400px;
+        }
+
+        div {
+            height: 100%;
+        } */
+        /* 方案三： flex */
+        .average-layout {
+            display: flex;
+            width: 400px;
+            height: 400px;
+        }
+
+        div {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="average-layout">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+        <div class="four"></div>
+    </div>
+</body>
+
+</html>

@@ -36,7 +36,7 @@
         } */
 
         /* 方案二：双飞翼布局：float + margin-left/right */
-        .grail-layout {
+        /* .grail-layout {
             width: 400px;
             height: 400px;
         }
@@ -56,6 +56,24 @@
             margin: 0 100px;
             height: 100%;
             background-color: rgb(238, 231, 18);
+        } */
+        /* 方案三：flex */
+        .grail-layout {
+            display: flex;
+            width: 400px;
+            height: 400px;
+        }
+        .left {
+            width: 100px;
+            background-color: rgb(34, 223, 53);
+        }
+        .center {
+            flex: 1;
+            background-color: rgb(238, 231, 18);
+        }
+        .right {
+            width: 100px;
+            background-color: rgb(236, 25, 173);
         }
     </style>
 </head>
@@ -63,8 +81,8 @@
 <body>
     <div class="grail-layout">
         <div class="left"></div>
-        <div class="right"></div>
         <div class="center"></div>
+        <div class="right"></div>
     </div>
 </body>
 
