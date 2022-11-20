@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Column Layout</title>
+    <style>
+        /* 方案一：margin-left 一定的位置 */
+        /* 方案二：左列声明浮动，右列声明overflow:hidden使其形成BFC区域与外界隔离 */
+        /* 方案三：flex 布局 */
+        /* .two-column-layout {
+            width: 400px;
+            height: 400px;
+            background-color: blueviolet;
+        }
+        .left {
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: red;
+        }
+        .right { */
+        /* 方案一 */
+        /* margin-left: 100px; */
+        /* 方案二 */
+        /* overflow: hidden; */
+        /* height: 100%;
+            background-color: chartreuse;
+        } */
+
+        .two-column-layout {
+            display: flex;
+            width: 400px;
+            height: 400px;
+        }
+
+        .left {
+            width: 100px;
+            background: #f66;
+        }
+
+        .right {
+            /* width: 300px; */
+            flex: 1;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="two-column-layout">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>
