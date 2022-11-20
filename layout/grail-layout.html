@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grail Layout / Double Wing Layout</title>
+    <style>
+        /* 方案一：圣杯布局：float + margin-left/right + padding-left/right */
+        /* .grail-layout {
+            padding: 0 100px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .left {
+            float: left;
+            margin-left: -100px;
+            width: 100px;
+            height: 100%;
+            background-color: rgb(34, 223, 53);
+        }
+
+        .right {
+            float: right;
+            margin-right: -100px;
+            width: 100px;
+            height: 100%;
+            background-color: rgb(236, 25, 173);
+        }
+
+        .center {
+            height: 100%;
+            background-color: rgb(238, 231, 18);
+        } */
+
+        /* 方案二：双飞翼布局：float + margin-left/right */
+        .grail-layout {
+            width: 400px;
+            height: 400px;
+        }
+        .left {
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: rgb(34, 223, 53);
+        }
+        .right {
+            float: right;
+            width: 100px;
+            height: 100%;
+            background-color: rgb(236, 25, 173);
+        }
+        .center {
+            margin: 0 100px;
+            height: 100%;
+            background-color: rgb(238, 231, 18);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grail-layout">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="center"></div>
+    </div>
+</body>
+
+</html>
